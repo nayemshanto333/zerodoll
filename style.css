@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+header{
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+header .logo{
+    
+    height: auto;
+    position: absolute;    
+    margin-left: 30px;
+}
+header .logo img{
+    font-size: 30px;
+    margin-top: -15px;
+    width:120px;
+    height: auto;
+}
+.search{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 200px;
+}
+.search input{
+    height: 40px;
+    width: 350px;
+    border-radius: 50px;
+    border: none;
+    border: .5px solid #ddd;
+    font-size: 16px;
+    padding-left:20px ;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.navbar .active{
+    color: blue;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+    
+    
+    /* background-color: #262626;
+    border-right: 1px solid #fff; */
+   
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    
+
+}
+.navbar ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.navbar ul ul{
+    margin-left: -40px;
+    display: none;
+    opacity: 0;
+    z-index: 1;   
+}
+.navbar ul li:hover > ul{
+    display: block;
+    opacity: 1; 
+}
+.navbar ul ul li{
+    width: 170px;
+    background-color:#262626;
+    border: 1px solid #fff;
+}
+.navbar ul ul li:hover{
+    background-color: #555;
+    transition: ease .3s;
+    
+}
+.navbar ul ul li a{
+    color: #fff;
+}
+.navbar ul ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar .sign{
+    color: #000;
+}
+.navbar .sign:active{
+    color: green;
+}
+
+/** hero section **/ 
+
+.hero-image {
+    background-image: url(/image/hero-image.jpg);
+    height: 400px;
+    background-size: cover;
+}
+
+/* productsecton1 start */
+.product-conteinar{
+    height: 600px;
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.box {
+    height: 250px;
+    width: 15%;
+    background-color: #fff;
+   padding: 5px 0 5px;
+   margin-top: 15px ;
+   margin-bottom: 15px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.productbox {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.productbox h4 {
+    font-size: .95rem;
+}
+.productbox p {
+    font-size: .75rem;
+}
+.productbox span {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 90px;
+}
+.box-image {
+    height: 120px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    
+}
+.box-image:hover{
+    opacity: .7;
+}
+
+
+/* productsecton1 end */
+
+/** footer **/
+
+footer{
+    margin-top: 15px;
+    text-align: center;
+    color: #ccc;
+    height: 60px;
+    background-color: #131a22;
+    padding-top: 11px;
+
+}
+.links {
+    /* padding-left: 10px; */
+    font-size: .85rem;
+    padding-bottom: 5px;
+}
+.links a{
+    text-decoration: none;
+    color:#ccc;
+    font-size: .85rem;  
+    padding-left: 10px;    
+}
+.links a:hover {
+    text-decoration: underline;
+}
+
